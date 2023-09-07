@@ -30,8 +30,6 @@
               <i class="fas fa-bars"></i>
             </button>
           </div>
-          
-       
           <ul class="links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -41,8 +39,8 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          
         </div>
-        
       </nav>
     </section>
     <div class="left__slidebar">
@@ -635,46 +633,61 @@
                 <h3 class="scroll-animation">hello@moses.design</h3>
                 <form action="" class="contact__form scroll-animation">
                   <div class="contact__list grid">
-                    <div class="input__group">
-                      <label for="full-name">Full name <sup>*</sup></label>
+                    <div class="input__group ">
+                     
+                      <label for="first-name ">First Name <sup>*</sup></label>
+                      <div class="box">
                       <input
                         type="text"
-                        placeholder="Your full name"
-                        id="full-name"
+                        placeholder="enter your first name"
+                        id="first-name" 
                       />
                     </div>
+                    </div>
 
-                    <div class="input__group">
-                      <label for="email">Email <sup>*</sup></label>
-                      <input type="email" placeholder="Your email" id="email" />
+                    <div class="input__group ">
+                      <label for="email">Last Name <sup>*</sup></label>
+                      <div class="box">
+                      <input type="text" placeholder="enter your second name" id="email" required/>
+                      </div>
                     </div>
 
                     <div class="input__group">
-                      <label for="phone">Phone <span>(option)</span></label>
+                      <label for="email">Email </label>
+                      <div class="box">
                       <input
-                        type="text"
-                        placeholder="Your phone number"
-                        id="phone"
-                      />
+                        type="email"
+                        placeholder="enter you email"
+                        id="email"
+                       required/>
+                      </div>
                     </div>
 
                     <div class="input__group">
-                      <label for="budget">Budget<span>(option)</span></label>
+                      <label for="budget">Phone number<span>(option)</span></label>
+                      <div class="box">
                       <input
                         type="text"
                         placeholder="Enter your Budget"
                         id="budget"
                       />
+                      </div>
                     </div>
 
                     <div class="input__group upload-attachment">
-                      <label for="message">message</label>
+                      <label for="message" class="center-label">message</label>
+                    </div>
+                      <div class=" input__group">
+                      <div class="box">
+              
                       <textarea
                         placeholder="write your message here"
                         id="message"
                       ></textarea>
                     </div>
-                    <div class="input__group upload-attachment">
+                      </div>
+                   
+                    <!-- <div class="input__group upload-attachment">
                       <div>
                         <label for="upload-attachment">
                           <i class="las la-cloud-upload-alt"></i>
@@ -682,49 +695,13 @@
                           <input type="file" id="upload-attachment" />
                         </label>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="input__group submit__btn-wrap">
                       <button class="them__btn" id="sendMessageBtn">Send message</button>
                     </div>
                    
                   </div>
-                  
-                  <div class="my-text">
-                    <p>Do you want to subcribe to my channel?</p>
-                    <p>Join me here!!</p>
-                  </div>
-
-
-                  <div class="center right-aligned-div ">
-                   
-         <button id="show-login">Login</button>
-                  </div>
-                  <div class="popup">
-                    <div class="close-btn">&times;</div>
-                    <div class="form">
-                      <h2>Login in</h2>
-                      <div class="form-element">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="enter email" />
-                      </div>
-                      <div class="form-element">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="enter password" />
-                      </div>
-              
-                      <div class="form-element">
-                        <input type="checkbox" id="remember-me" />
-                        <label for="remember-me">Remember me</label>
-                      </div>
-                      <div class="form-element">
-                        <button>Sign in</button>
-                      </div>
-                      <div class="form-element">
-                        <a href="#">Forgot password?</a>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+               </form>
                
                 <footer class="footer">
                   <div class="footer-text">
