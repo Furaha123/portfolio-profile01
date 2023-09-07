@@ -190,16 +190,19 @@ nav {
   .links {
     height: auto;
     display: flex;
+
     padding: 4px;
     margin: 4px;
   }
   .links a {
-    padding: 3px;
+    padding: 8px;
 
-    font-size: 12px;
+    font-size: 16px;
   }
   .links li {
     margin: 0 0.25rem;
+    padding: 5px;
+    margin: 2px;
   }
   .links a:hover {
     padding: 0;
@@ -207,6 +210,43 @@ nav {
   }
 }
 
+@media screen and (max-width: 799px) {
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: #666;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: #28e98c;
+    transform: rotate(90deg);
+  }
+
+  .links {
+    height: 0;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: 300;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links li {
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .show-links {
+    height: auto;
+  }
+
+  .links li a.active,
+  .links li a:hover {
+    border-bottom: 1px solid #28e98c;
+    width: 30px;
+  }
+}
 /* LEFT SIDE */
 
 .left__slidebar {
